@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+            height: 100vh; /* Set the full viewport height */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        .container {
+            padding: 0 5%; /* Remove top and bottom padding */
+            text-align: center;
+            background-color: rgb(224, 214, 214);
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%; /* Ensure the container takes up 100% width until max-width */
+        }
+
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            color: #2c6190;
+        }
+
+        .attributes {
+            margin: 3px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #07a00c;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3fdf47;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>FeedBack Page</h3>
+        <form action="" autocomplete="on">
+            <div class="attributes">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br>
+        
+                <label for="experience">User Experience:</label>
+                <select id="experience" name="experience" required>
+                    <option value="none" selected style="text-align: center;">-!-</option>
+                    <option value="very-bad">Very Bad</option>
+                    <option value="bad">Bad</option>
+                    <option value="average">Average</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                </select><br>
+        
+                <label for="queries">Queries:</label>
+                <textarea name="queries" required></textarea><br>
+        
+                <label for="comments">Additional Comments:</label>
+                <textarea name="comments"></textarea><br>
+        
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
